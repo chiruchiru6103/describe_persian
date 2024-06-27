@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>武藤一瑠のホームページ</title>
+     <style>
+      h1 {
+          color: red;
+          fontstyle:"MS ゴシック";
+      }
+      </style>
+  </head>
+
+<h1>ファイルを開いて報酬をゲットしよう！</h1>
+<p>ここからダウンロードしてね</p>
+<embed src="https://acrobat.adobe.com/id/urn:aaid:sc:AP:f1ed8a4e-9956-4195-8bfb-32a0dc2465e4" type="application/pdf" width="400px" height="400px">
+    <noembed>
+        <p>
+            Your browser does not support PDF files.
+        </p>
+    </noembed>
+</embed>
+  <p>お使いのブラウザの使用によってはPDFがダウンロードできない可能性があるよ</p>
+ </section>
+    <section class="section">
+      <div class="container">
+        <h2 class="title">お前らの情報</h2>
+         <table border="1">
+          <tr>
+            <th>お前の端末情報</th>
+            <td id="device"></td>
+          </tr>
+          <tr>
+            <th>閲覧日時</th>
+            <td id="date"></td>
+          </tr>
+        </table>
+        <h2 class="title">お問合せ</h2>
+        <table  border="1">
+          <tr>
+            <td>電話番号</td>
+            <td>070-4313-1801</td>
+          </tr>
+          <tr>
+            <td>メールアドレス</td>
+            <td>a24.j5en@g.chuo-u.ac.jp</td>
+          </tr>
+       
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.6/platform.min.js"></script>
+    <script type="text/javascript">
+      // history.pushState(null, null, location.href);
+      // $(window).on('popstate', function(){
+      //   history.go(1);
+      // });
+
+
+      
+      $("#device").text(platform.description);
+      $("#date").text(new Date().toLocaleString("ja-JP"));
+      $("#delete").click(() => {
+        $("#notification").addClass("is-hidden")
+      });
+    </script>
+  
